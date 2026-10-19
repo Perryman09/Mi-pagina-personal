@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+    <linearGradient id="ballGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fb923c" />
+      <stop offset="100%" stop-color="#ea580c" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- Background circle with outer ring -->
+  <circle cx="200" cy="200" r="190" fill="url(#bgGrad)" stroke="#38bdf8" stroke-width="6" filter="url(#shadow)" />
+  
+  <!-- Decorative tech circle patterns -->
+  <circle cx="200" cy="200" r="160" fill="none" stroke="#0ea5e9" stroke-width="1.5" stroke-dasharray="6,8" opacity="0.4" />
+  
+  <!-- Silhouette / Stylized Avatar Body -->
+  <!-- Torso with hoodie/shirt -->
+  <path d="M 120 340 C 120 280, 150 250, 200 250 C 250 250, 280 280, 280 340 Z" fill="url(#avatarGrad)" />
+  <!-- Collar / inner shirt -->
+  <path d="M 175 250 L 200 285 L 225 250 Z" fill="#0f172a" />
+
+  <!-- Head -->
+  <ellipse cx="200" cy="180" rx="48" ry="58" fill="#fbd5b5" />
+  
+  <!-- Modern Hair -->
+  <path d="M 152 170 C 150 125, 175 110, 200 110 C 225 110, 250 125, 248 170 C 240 145, 230 135, 200 135 C 170 135, 160 145, 152 170 Z" fill="#1c1917" />
+  
+  <!-- Developer Modern Glasses -->
+  <rect x="165" y="165" width="28" height="20" rx="5" fill="none" stroke="#0284c7" stroke-width="3.5" />
+  <rect x="207" y="165" width="28" height="20" rx="5" fill="none" stroke="#0284c7" stroke-width="3.5" />
+  <line x1="193" y1="175" x2="207" y2="175" stroke="#0284c7" stroke-width="3" />
+
+  <!-- Eyes smile hint -->
+  <circle cx="179" cy="175" r="3.5" fill="#0369a1" />
+  <circle cx="221" cy="175" r="3.5" fill="#0369a1" />
+
+  <!-- Confident Smile -->
+  <path d="M 188 208 Q 200 218 212 208" fill="none" stroke="#9a3412" stroke-width="2.5" stroke-linecap="round" />
+
+  <!-- Basketball Badge / Accent on bottom right -->
+  <g transform="translate(260, 260)" filter="url(#shadow)">
+    <circle cx="45" cy="45" r="40" fill="url(#ballGrad)" stroke="#ffffff" stroke-width="3.5" />
+    <!-- Basketball lines -->
+    <line x1="5" y1="45" x2="85" y2="45" stroke="#431407" stroke-width="3" />
+    <line x1="45" y1="5" x2="45" y2="85" stroke="#431407" stroke-width="3" />
+    <path d="M 18 18 C 34 32, 34 58, 18 72" fill="none" stroke="#431407" stroke-width="2.5" />
+    <path d="M 72 18 C 56 32, 56 58, 72 72" fill="none" stroke="#431407" stroke-width="2.5" />
+  </g>
+
+  <!-- Code brackets badge on bottom left -->
+  <g transform="translate(15, 260)" filter="url(#shadow)">
+    <circle cx="45" cy="45" r="35" fill="#0f172a" stroke="#38bdf8" stroke-width="3" />
+    <text x="45" y="54" font-family="Courier New, monospace" font-size="24" font-weight="bold" fill="#38bdf8" text-anchor="middle">&lt;/&gt;</text>
+  </g>
+</svg>

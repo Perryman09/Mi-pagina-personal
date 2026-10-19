@@ -1,0 +1,16 @@
+# Archivos del sistema
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# Archivos temporales de edición
+*.tmp
+*.temp
+*~
+.vscode/
+.idea/
+
+# Documentación y evidencias locales
+docs/
